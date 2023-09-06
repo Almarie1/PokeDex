@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokemon List</h1>
+        <div class="filter">
+            <input type="text" id="filterInput" placeholder="Filter by Name or ID">
+            <button onclick="filterPokemon()">Filter</button>
+        </div>
+        <div class="sort">
+            <label for="sortSelect">Sort By:</label>
+            <select id="sortSelect" onchange="sortPokemon()">
+                <option value="idAsc">ID (Ascending)</option>
+                <option value="idDesc">ID (Descending)</option>
+                <option value="nameAsc">Name (Ascending)</option>
+                <option value="nameDesc">Name (Descending)</option>
+            </select>
+        </div>
+    </header>
+    <main id="pokemonContainer">
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
